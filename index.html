@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bongo Doggo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <main class="app">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Desk pup clicker</p>
+          <h1>Bongo Doggo</h1>
+          <p class="hero-text">
+            Tap the dog, stack combos, and collect enough treats to turn a tiny office puppy into a full-on rhythm legend.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-label">Treats</span>
+            <strong class="stat-value" id="treat-count">0</strong>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Combo</span>
+            <strong class="stat-value" id="combo-count">0x</strong>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Treats / sec</span>
+            <strong class="stat-value" id="auto-rate">0</strong>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Best run</span>
+            <strong class="stat-value" id="best-run">0</strong>
+          </article>
+        </div>
+
+        <div class="combo-strip">
+          <div class="combo-strip__fill" id="combo-fill"></div>
+        </div>
+
+        <button class="dog-stage" id="dog-button" type="button" aria-label="Tap the dog to earn treats">
+          <div class="sky-glow"></div>
+          <div class="spark-layer" id="spark-layer" aria-hidden="true"></div>
+
+          <div class="dog">
+            <div class="ear ear--left"></div>
+            <div class="ear ear--right"></div>
+            <div class="tail"></div>
+            <div class="body"></div>
+            <div class="head">
+              <div class="eyes">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="muzzle">
+                <div class="nose"></div>
+                <div class="mouth"></div>
+              </div>
+            </div>
+            <div class="paw paw--left"></div>
+            <div class="paw paw--right"></div>
+          </div>
+
+          <div class="keyboard" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="desk"></div>
+        </button>
+
+        <div class="status-row">
+          <p class="status-line" id="status-line">The dog is ready to jam. Click anywhere on the pup to start.</p>
+          <button class="reset-button" id="reset-button" type="button">Reset run</button>
+        </div>
+      </section>
+
+      <aside class="store-panel">
+        <section class="panel-card">
+          <div class="panel-header">
+            <p class="eyebrow">Pupgrades</p>
+            <h2>Snack shop</h2>
+          </div>
+          <div class="upgrade-list" id="upgrade-list"></div>
+        </section>
+
+        <section class="panel-card">
+          <div class="panel-header">
+            <p class="eyebrow">Milestones</p>
+            <h2>Good dog badges</h2>
+          </div>
+          <ul class="milestone-list" id="milestone-list"></ul>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
